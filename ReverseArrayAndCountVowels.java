@@ -12,26 +12,25 @@ public class ReverseArrayAndCountVowels {
     private static void printReverseArrayAndNoOfVowels(String sentence) {
         int count = 0;
 
-        if(sentence.isEmpty()){
+        if (sentence.isEmpty()) {
             System.out.println("Invalid Input");
-        }
-        else{
-            String lowerCase=sentence.toLowerCase();
-            for(int i=0;i<lowerCase.length();i++) {
-                char vowel=lowerCase.charAt(i);
-                if(vowel=='a' || vowel=='e' ||vowel=='i' || vowel=='o' || vowel=='u'){
+        } else {
+            String lowerCase = sentence.toLowerCase();
+            for (int i = 0; i < lowerCase.length(); i++) {
+                char vowel = lowerCase.charAt(i);
+                if (vowel == 'a' || vowel == 'e' || vowel == 'i' || vowel == 'o' || vowel == 'u') {
                     count++;
                 }
             }
-            char[] words=new char[sentence.length()];
-            int n=words.length;
-            for(int i=0;i<words.length;i++){
-                words[n-1-i]=sentence.charAt(i);
+            char[] words = new char[sentence.length()];
+            int n = words.length;
+            for (int i = 0; i < words.length; i++) {
+                words[n - 1 - i] = sentence.charAt(i);
             }
 
-            String reverse=String.copyValueOf(words);
-            System.out.println("Reverse of String:"+reverse);
-            System.out.println("Number of Vowels: "+count);
+            String reverse = String.copyValueOf(words);
+            System.out.println("Reverse of String:" + reverse);
+            System.out.println("Number of Vowels: " + count);
         }
     }
 
