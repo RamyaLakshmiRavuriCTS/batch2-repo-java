@@ -15,11 +15,13 @@ import java.util.Scanner;
             }
         }
         public static void main(String[] args) {
+            
             Scanner sc = new Scanner(System.in);
             System.out.println("Enter the type of TV");
             System.out.println("1. Black and White TV");
             System.out.println("2. Color TV");
             String choiceInput = sc.nextLine();
+            
             if (choiceInput.equals("1. Black and White TV")) {
                 BlackAndWhiteTv tv = new BlackAndWhiteTv();
                 tv.selection();
