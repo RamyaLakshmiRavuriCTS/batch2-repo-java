@@ -1,10 +1,6 @@
 package com.company;
-
-
-
-public class BlackandWhiteTV {
-    public  void  selectTypeOfTv() {
-
-        System.out.println("You Have selected Black and White TV");
+public class BlackAndWhiteTV implements SelectTV{
+    public void SelectTypeOfTV() {
+        System.out.println("You have selected Black And White TV");
     }
 }
