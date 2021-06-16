@@ -29,7 +29,7 @@ public class ReversedArray {
         }
         System.out.println("Reversed Array : " + reversedString);
         System.out.println("Number of Vowels : " + vowelsCount);
-        
+
         sc.close();
     }
 }
