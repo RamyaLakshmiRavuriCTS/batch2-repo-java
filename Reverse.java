@@ -22,8 +22,5 @@ class ReverseString
         }
         System.out.println("\nNumber of vowels in the given sentence is " +count);
 
-        System.out.println("Thanks and Regards");
-        System.out.println("Gangadhar Yalasa");
-
     }
 }
