@@ -7,7 +7,6 @@ public class Vowelscount {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the array:");
         String s = sc.nextLine();
-
         arrayReversalAndNoOfVowels(s);
 
     }

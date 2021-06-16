@@ -10,10 +10,10 @@ public class yes {
         int select = sc.nextInt();
 
         if (select == 1) {
-            BlackandWhite tv = new BlackandWhite();
+            TV tv = new BlackandWhite();
             tv.selectionofTv();
         } else if (select == 2) {
-            Color tv = new Color();
+            TV tv = new Color();
             tv.selectionofTv();
         } else {
             System.out.println("Invalid");
@@ -25,7 +25,6 @@ public class yes {
 
     @Override
     public void selectionofTv() {
-
         System.out.println("You have selected Black and White TV");
     }
 }
@@ -34,7 +33,6 @@ public class yes {
 
     @Override
     public void selectionofTv() {
-
         System.out.println("You have selected Color TV");
     }
 }
@@ -42,7 +40,6 @@ public class yes {
  class TV {
 
     public void selectionofTv() {
-
         System.out.println("You have selected a TV");
     }
  }
