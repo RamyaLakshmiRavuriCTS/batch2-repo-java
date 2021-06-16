@@ -8,10 +8,10 @@ public class Main {
         String choice = sc.nextLine();
 
         if (choice.equals("1. Black and White TV")) {
-            BlackandWhiteTV tv = new BlackandWhiteTV();
+            TV tv = new BlackandWhiteTV();
             tv.chooseTypeOfTv();
         } else if (choice.equals("2. Color TV")) {
-            BlackandWhiteTV tv = new ColorTV();
+            TV tv = new ColorTV();
             tv.chooseTypeOfTv();
         } else {
             System.out.println("Invalid Input");
