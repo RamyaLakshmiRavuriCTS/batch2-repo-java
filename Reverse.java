@@ -8,7 +8,8 @@ class ReverseString
         Scanner sc=new Scanner(System.in);
         System.out.print("Enter a String: ");
         s=sc.nextLine();                    //reading string from user
-
+        if(s.trim().length()>0)
+        {
         System.out.print("After reverse string is: ");
         for(int i=s.length();i>0;--i)                //i is the length of the string
         {
@@ -21,6 +22,8 @@ class ReverseString
             }
         }
         System.out.println("\nNumber of vowels in the given sentence is " +count);
-
+        }
+        else{
+        System.out.println("The given String is not containing any elements");    
     }
 }
