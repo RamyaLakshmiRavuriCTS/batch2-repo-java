@@ -1,4 +1,6 @@
 import java.util.Scanner;
+
+
 public class ReverseArray {
     public static void main(String[]args){
         Scanner sc = new Scanner(System.in);
@@ -6,6 +8,8 @@ public class ReverseArray {
         String string = sc.nextLine();
         reverse(string);
     }
+    
+    
     public static void reverse(String string ){
         int stringLen = string.length();
         char [] words = new char[stringLen];
@@ -18,7 +22,10 @@ public class ReverseArray {
                 count++;
             }
         }
+        
+        
         String reverse=String.copyValueOf(words);
+        
         System.out.println("Reversed array: "+reverse);
         System.out.println("Count of vowels: "+ count);
     }
