@@ -14,12 +14,12 @@ public class ReverseArray {
         if(msg.isEmpty()){
             System.out.println("Invalid Input");
         }
-        else{
+        else {
             int stringLen = msg.length();
-
             char[] words = new char[stringLen];
             int count = 0;
-            int wordsLen = words.length;
+            int wordsLen = words.length;.
+                
             for (int i = 0; i < wordsLen; i++) {
                 int j = wordsLen - 1 - i;
                 words[j] = msg.charAt(i);
