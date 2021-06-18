@@ -1,5 +1,7 @@
 import java.util.Scanner;
+
 public class TelevisionSelection {
+    
     public static void main(String [] args){
        TelevisionSelection tel = new TelevisionSelection();
         Scanner scanner=new Scanner(System.in);
@@ -7,6 +9,7 @@ public class TelevisionSelection {
         int selection=scanner.nextInt();
        tel.chooseTypeOfTv(selection);
     }
+    
     public  void chooseTypeOfTv(int selection){
         switch(selection){
             case 1:
