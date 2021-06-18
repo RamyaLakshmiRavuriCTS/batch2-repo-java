@@ -2,8 +2,7 @@ import java.util.Scanner;
 
 public class TelevisionSelection {
     
-    public static void main(String [] args){
-        
+    public static void main(String [] args){        
        TelevisionSelection tel = new TelevisionSelection();
         Scanner scanner=new Scanner(System.in);
         System.out.println("Enter your Selection Number:\n 1 - Black and White TV \n 2 - Color TV");
