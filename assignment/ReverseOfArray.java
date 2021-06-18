@@ -3,10 +3,6 @@ import java.util.Scanner;
 public class ReverseOfArray {
     public void reverseWordInMyString(String str) {
         int count = 0;
-        if (str.trim().length() > 0) {
-            if (str.isEmpty()) {
-                System.out.println("Not a valid Input");
-            } else {
                 for (int k = 0; k < str.length(); k++) {
                     char l = str.toLowerCase().charAt(k);
                     if (l == 'a' || l == 'e' || l == 'i' || l == 'o' || l == 'u') {
@@ -23,8 +19,6 @@ public class ReverseOfArray {
                 System.out.println("Number of Vowels :  " + count);
 
             }
-        }
-    }
 
     public static void main(String[] args) {
 
@@ -37,7 +31,5 @@ public class ReverseOfArray {
         }
         else
             System.out.println("Enter a valid String");
-
-
     }
     }
