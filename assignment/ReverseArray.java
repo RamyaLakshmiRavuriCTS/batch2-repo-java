@@ -9,6 +9,7 @@ public class ReverseArray {
         String msg = sc.nextLine();
         reverse(msg);
     }
+    
     public static void reverse(String msg){
         if(msg.isEmpty()){
             System.out.println("Invalid Input");
