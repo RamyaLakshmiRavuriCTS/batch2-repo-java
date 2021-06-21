@@ -15,7 +15,5 @@ public class Doctor extends Person{
     public void responsibility() {
         System.out.println(getName()+" works as a Doctor");
         System.out.println(getName()+" lives in "+getAddress());
-
-
     }
 }
