@@ -15,6 +15,5 @@ public class Student extends Person {
     public void responsibility() {
         System.out.println(getName()+" goes to school and  lives in "+getAddress());
         System.out.println(getName()+" lives in "+getAddress());
-
     }
 }
