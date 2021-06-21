@@ -1,6 +1,9 @@
 public class RoyalEnfield implements Bike {
-    @Override
-    public void Company() {
-        System.out.println("Bike is Royal Enfeild");
+    private int speed;
+    public RoyalEnfield(int speed) {
+        this.speed = speed;
+    }
+    public int getSpeed() {
+        return speed;
     }
 }

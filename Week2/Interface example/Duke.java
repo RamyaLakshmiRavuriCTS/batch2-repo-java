@@ -1,6 +1,6 @@
-public class Honda implements Bike {
+public class Duke implements Bike {
     private int speed;
-    public Honda(int speed) {
+    public Duke(int speed) {
         this.speed = speed;
     }
     public int getSpeed() {

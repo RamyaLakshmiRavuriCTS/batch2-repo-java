@@ -1,9 +1,14 @@
 public interface Bike {
-    public final int SpeedLimitOfBike = 90;
-
-    default void SpeedLimit() {
-        System.out.println("Speed is " + SpeedLimitOfBike);
+    int MAX_SPEED = 90;
+    default void checkSpeed(int speed) {
+        if (speed < 0) {
+            System.out.println("Invalid input");
+        } else {
+            if (speed >= MAX_SPEED) {
+                System.out.println("You are crossed the maximum speed");
+            } else {
+                System.out.println("Your speed is " + speed+" KM/H");
+            }
+        }
     }
-
-    public void Company();
 }

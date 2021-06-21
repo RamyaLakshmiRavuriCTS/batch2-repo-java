@@ -4,18 +4,6 @@ import java.util.*;
 
 public class SortAndSearch {
     static List<Number> numbers = new ArrayList<>();
-    static Set<Number> noDuplicate = new HashSet<>();
-
-
-
-    public List<Number> removeDuplicates(List<Number> numbers) {
-        List<Number> originalList = new ArrayList<>();
-        noDuplicate.addAll(numbers);
-        originalList.addAll(noDuplicate);
-        return originalList;
-    }
-
-
 
     public List<Number> sort(List<Number> result) {
         Number temp;
@@ -69,7 +57,10 @@ public class SortAndSearch {
                 break;
             }
         }
-        List<Number> result = sortAndSearch.removeDuplicates(numbers);
+         Set<Number> noDuplicate = new HashSet<>();
+        noDuplicate.addAll(numbers);
+         List<Number> result = new ArrayList<>();
+        result.addAll(noDuplicate);
         List<Number> sorted = sortAndSearch.sort(result);
         System.out.println("Sorted elements:");
         for (Number i : sorted) {
