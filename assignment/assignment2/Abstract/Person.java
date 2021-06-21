@@ -27,6 +27,4 @@ public abstract class Person {
 
     public abstract void role();
     public abstract void responsibility();
-
-
 }
