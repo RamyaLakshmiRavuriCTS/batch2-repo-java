@@ -25,7 +25,6 @@ public class JavaCollections {
             for(int j=i+1;j<size;j++){
                 if(list.get(i)+list.get(j)==inputNumber)
                     System.out.println(list.get(i) + "+" + list.get(j) + "=" + inputNumber );
-
             }
         }
     }
