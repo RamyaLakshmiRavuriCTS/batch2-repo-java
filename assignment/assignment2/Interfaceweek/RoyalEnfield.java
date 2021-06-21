@@ -13,6 +13,5 @@ public class RoyalEnfield implements Bike {
     @Override
     public void move(String name) {
         System.out.println(name+" is moving with "+getSpeedLimit()+"KMPH speed");
-
     }
 }
