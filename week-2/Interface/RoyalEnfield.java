@@ -1,6 +1,7 @@
 public class RoyalEnfield implements Bike{
     int gear;
     String name;
+    
     @Override
     public void changeGear(int newGear) {
         gear= newGear;
@@ -11,7 +12,4 @@ public class RoyalEnfield implements Bike{
     public void move(String name) {
         System.out.println(name+" is moving with "+getSpeedLimit()+"KMPH speed");
     }
-
-
-
 }
