@@ -17,7 +17,7 @@ public class Number implements Comparable {
     }
     @Override
     public int hashCode() {
-        return (int)(this.number*100);
+        return (int)this.number;
     }
     @Override
     public boolean equals(Object obj) {
