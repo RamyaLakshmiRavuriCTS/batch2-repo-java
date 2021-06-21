@@ -1,8 +1,10 @@
 public class HarleyDavidson implements Bike {
 
-    @Override
-    public void Company()
-    {
-        System.out.println("Bike is Harley Davidson");
+    private int speed;
+    public HarleyDavidson(int speed) {
+        this.speed = speed;
+    }
+    public int getSpeed() {
+        return speed;
     }
 }

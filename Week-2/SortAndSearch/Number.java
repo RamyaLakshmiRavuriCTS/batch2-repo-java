@@ -1,5 +1,3 @@
-
-
 public class Number implements Comparable {
     double number;
     public Number(int number){
