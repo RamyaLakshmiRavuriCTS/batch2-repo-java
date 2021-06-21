@@ -12,8 +12,4 @@ public class Honda implements Bike{
     public void move(String name) {
         System.out.println(name+" is moving with "+speedLimit+"KMPH speed");
     }
-
-
-
-
 }
