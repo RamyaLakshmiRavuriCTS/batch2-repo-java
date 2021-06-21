@@ -5,6 +5,7 @@ public class JavaMain {
     static Set<Number> noDuplicate = new HashSet<>();
 
     public static List<Number> removeDuplicates(List<Number> numbers) {
+        
         List<Number> originalList = new ArrayList<>();
         for (Number number : numbers) {
             noDuplicate.add(number);
@@ -17,6 +18,7 @@ public class JavaMain {
 
     public static List<Number> sort(List<Number> result) {
         Number temp;
+        
         for (int i = 0; i < result.size(); i++) {
             for (int j = i + 1; j < result.size(); j++) {
                 if (result.get(i).getNumber() > result.get(j).getNumber()) {
@@ -68,6 +70,7 @@ public class JavaMain {
         List<Number> result = removeDuplicates(numbers);
         List<Number> sorted = sort(result);
         System.out.println("Sorted elements:");
+        
         for (Number i : sorted) {
             double x = i.getNumber();
             if (Math.ceil(x) == x)
