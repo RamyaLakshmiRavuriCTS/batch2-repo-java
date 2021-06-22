@@ -22,7 +22,7 @@ public abstract class Person {
     public String getAddress() {
         return this.address;
     }
-
+    //abstract methods that are to be implemented by subclasses
     public abstract void role();
 
     public abstract void responsibility();

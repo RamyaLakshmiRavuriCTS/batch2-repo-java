@@ -5,19 +5,22 @@ public class SumPairs {
 
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the number of elements");
-        int n = sc.nextInt();
-        HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
-        int[] arr = new int[n];
-        System.out.println("Enter array elements");
-        for (int i = 0; i < n; i++)
-            arr[i] = sc.nextInt();
-        System.out.println("Enter the value");
-        int value = sc.nextInt();
+        Scanner read = new Scanner(System.in);
 
-        System.out.println("Pairs of elements whose sum is "+value+" are:");
-        for (int i = 0; i < n; i++) {
+        System.out.println("Enter the number of elements");
+        int size = read.nextInt();
+        HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+        int[] arr = new int[size];
+
+        System.out.println("Enter array elements");
+        for (int i = 0; i < size; i++)
+            arr[i] = read.nextInt();
+
+        System.out.println("Enter the value");
+        int value = read.nextInt();
+
+        System.out.println("Pairs of elements whose sum is " + value + " are:");
+        for (int i = 0; i < size; i++) {
             int rem = value - arr[i];
             if (map.containsKey(rem)) {
                 int count = map.get(rem);

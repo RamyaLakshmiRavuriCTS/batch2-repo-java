@@ -5,6 +5,7 @@ public class DuplicateAndSort {
     static List<Number> numbers = new ArrayList<>();
     static Set<Number> noDuplicate = new HashSet<>();
 
+    //we are using hashmap to remove duplicates
     public static List<Number> removeDuplicates(List<Number> numbers) {
 
         List<Number> originalList = new ArrayList<>();
@@ -17,6 +18,7 @@ public class DuplicateAndSort {
         return originalList;
     }
 
+    //sorting the items based on value
     public static List<Number> sort(List<Number> result) {
         Number temp;
 
@@ -33,6 +35,7 @@ public class DuplicateAndSort {
         return result;
     }
 
+    //binary search for key is applied here
     public static int binarySearch(double n, List<Number> sort) {
         int first = 0;
         int last = sort.size() - 1;

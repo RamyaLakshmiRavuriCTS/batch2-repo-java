@@ -6,11 +6,14 @@ public class Teacher extends Person {
         super(name, address);
     }
 
-
+    //prints role of teacher
+    @Override
     public void role() {
         System.out.println("My Role is Teacher");
     }
 
+    //prints teacher responsibility
+    @Override
     public void responsibility() {
         System.out.println("My responsibility is teaching");
     }

@@ -6,5 +6,6 @@ public interface Bike {
         System.out.println("The maximum speed limit is " + speedLimit + "kmph");
     }
 
+    //abstract method
     public void getCompany();
 }
