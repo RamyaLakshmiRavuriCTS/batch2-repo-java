@@ -14,7 +14,4 @@ public interface Bike {
     int accelerate();
     void engineStop();
 
-
-
-
 }
