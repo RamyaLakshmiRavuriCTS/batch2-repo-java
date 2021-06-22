@@ -1,3 +1,5 @@
+/* Person is abstract class
+ *  Because it contains two unimplemented methods(role,responsibilities)*/
 public abstract class Person {
     private String name;
     private String address;
@@ -23,6 +25,8 @@ public abstract class Person {
         this.address = address;
     }
 
+    /* Methods which doesn't have method body
+     *   is called abstract methods*/
     public abstract void role();
 
     public abstract void responsibilities();

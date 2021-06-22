@@ -2,9 +2,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/*This class gives the pair of elements whose sum is equal to given input*/
 public class FindAllPairs {
     private static Scanner sc = new Scanner(System.in);
 
+    /*Main method*/
     public static void main(String[] args) {
         System.out.println("Enter size of array");
         int n = sc.nextInt();
@@ -23,6 +25,7 @@ public class FindAllPairs {
         printPairOfElements(list, num);
     }
 
+    /*print the pair of element whose list is equal to given input number*/
     private static void printPairOfElements(List<Integer> list, int number) {
         int count = 0;
 

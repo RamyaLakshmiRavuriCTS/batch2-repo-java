@@ -1,16 +1,13 @@
 import java.util.*;
 
+/*This class sort the collections of elements
+ * and eliminate the duplicate elements
+ * and search the element using binary search*/
 public class SortAndSearch {
     static List<Number> numbers = new ArrayList<>();
-    static Set<Number> noDuplicate = new HashSet<>();
 
-    public static List<Number> removeDuplicates(List<Number> numbers) {
-        List<Number> originalList = new ArrayList<>();
-        noDuplicate.addAll(numbers);
-        originalList.addAll(noDuplicate);
-        return originalList;
-    }
-
+    /*this method sort the list of elements and
+     * sorted list is given as output */
     public static List<Number> sort(List<Number> result) {
         Number temp;
         for (int i = 0; i < result.size(); i++) {
@@ -25,6 +22,8 @@ public class SortAndSearch {
         return result;
     }
 
+    /*this method search the given element is present in the list or not
+     * if present return index of the element in the sorted list */
     public static int binarySearch(double n, List<Number> sort) {
         int first = 0;
         int last = sort.size() - 1;
@@ -42,11 +41,13 @@ public class SortAndSearch {
         return -1;
     }
 
+    /*Main method */
     public static void main(String[] args) {
         double number;
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter element to search");
         double element = sc.nextDouble();
+
         System.out.println("Enter element collection(loop ends when you give alphabet as input)");
         while (true) {
             if (sc.hasNextInt()) {
@@ -58,7 +59,10 @@ public class SortAndSearch {
                 break;
             }
         }
-        List<Number> result = removeDuplicates(numbers);
+        Set<Number> noDuplicate = new HashSet<>();
+        noDuplicate.addAll(numbers);
+        List<Number> result = new ArrayList<>();
+        result.addAll(noDuplicate);
         List<Number> sorted = sort(result);
         System.out.println("Sorted elements:");
         for (Number i : sorted) {

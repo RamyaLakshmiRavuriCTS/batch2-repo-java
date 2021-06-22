@@ -1,4 +1,6 @@
+/*Main class */
 public class InterfaceExample {
+    /*Main method*/
     public static void main(String[] args) {
         Bike royal = new RoyalEnfield(160);
         royal.checkSpeed(((RoyalEnfield) royal).getSpeed());

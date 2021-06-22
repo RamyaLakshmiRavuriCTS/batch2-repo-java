@@ -1,3 +1,5 @@
+/*Number is a class which takes all Types of numbers as Input
+ * Compare the numbers using Comparable interface*/
 public class Number implements Comparable {
     double number;
 
