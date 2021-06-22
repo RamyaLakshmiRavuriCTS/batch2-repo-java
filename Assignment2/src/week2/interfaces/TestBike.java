@@ -1,11 +1,10 @@
 package week2.interfaces;
 
 public class TestBike {
-
     public static void main(String[] args) {
 
         Bike bike1 = new Pulsar();
-
+        
         bike1.engineStart();
         System.out.println("Accelerating at " + bike1.accelerate() + " meters/square second");
         System.out.println("Max Speed: " + bike1.getSpeed() + " KMPH");
