@@ -1,5 +1,9 @@
+/*KTM has Bike
+ *KTM implements Bike interfaces
+ * It also overrides default methods in Bike*/
 public class KTM implements Bike {
-    public int speed;
+
+    private int speed;
 
     public KTM(int speed) {
         this.speed = speed;

@@ -1,5 +1,8 @@
+/*Suzuki has Bike
+ *Suzuki implements Bike interfaces
+ * It also overrides default methods in Bike*/
 public class Suzuki implements Bike {
-    public int speed;
+    private int speed;
 
     public Suzuki(int speed) {
         this.speed = speed;

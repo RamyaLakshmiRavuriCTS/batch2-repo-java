@@ -1,3 +1,5 @@
+/*Person is abstract class
+ *It contains two methods(role,responsibilities)*/
 public abstract class Person {
     private String name;
     private String address;
@@ -23,6 +25,7 @@ public abstract class Person {
         this.address = address;
     }
 
+    /*Abstract methods*/
     public abstract void role();
 
     public abstract void responsibilities();

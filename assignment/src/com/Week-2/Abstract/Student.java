@@ -1,3 +1,5 @@
+/*Student is a subclass of Person
+ *Student implements two methods(roles,responsibilities)*/
 public class Student extends Person {
     private String name;
     private String address;
@@ -6,11 +8,13 @@ public class Student extends Person {
         super(name, address);
     }
 
+    /*Abstract method(role)*/
     @Override
     public void role() {
         System.out.println(getName() + " is a Student");
     }
 
+    /*Abstract method(responsibilities)*/
     @Override
     public void responsibilities() {
         System.out.println("Responsibilities of " + getName() + " are:" +

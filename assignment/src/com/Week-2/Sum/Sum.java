@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+/*Sum is a class which prints the pair of elements whose sum is equal to given input number */
 public class Sum {
     public static void pairs(int[] Arr) {
         Scanner sc = new Scanner(System.in);
@@ -16,6 +17,7 @@ public class Sum {
         }
     }
 
+    /*Main method*/
     public static void main(String[] args) {
 
         pairs(new int[]{4, 6, 5, -10, 8, 5, 20});

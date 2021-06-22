@@ -1,5 +1,8 @@
 import java.util.*;
 
+/*Sort is a class which sorts and
+ *remove duplicate values in given input
+ * and search the given element*/
 public class Sort {
     static List<Number> numbers = new ArrayList<>();
     static Set<Number> noDuplicate = new HashSet<>();
@@ -15,6 +18,7 @@ public class Sort {
         return originalList;
     }
 
+    /*Here this method sort given input elements*/
     public static List<Number> sort(List<Number> result) {
         Number temp;
         for (int i = 0; i < result.size(); i++) {
@@ -30,6 +34,8 @@ public class Sort {
         return result;
     }
 
+    /*binarySearch method searches the given element and
+     *returns the index in sorted order*/
     public static int binarySearch(double n, List<Number> sort) {
         int first = 0;
         int last = sort.size() - 1;
@@ -47,6 +53,7 @@ public class Sort {
         return -1;
     }
 
+    /*Main*/
     public static void main(String[] args) {
         double number;
         Scanner sc = new Scanner(System.in);

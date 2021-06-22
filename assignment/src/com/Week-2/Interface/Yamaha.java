@@ -1,5 +1,8 @@
+/*Yamaha has Bike
+ *Yamaha implements Bike interfaces
+ * It also overrides default methods in Bike*/
 public class Yamaha implements Bike {
-    public int speed;
+    private int speed;
 
     public Yamaha(int speed) {
         this.speed = speed;
