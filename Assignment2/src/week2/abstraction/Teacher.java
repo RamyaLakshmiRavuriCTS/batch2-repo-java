@@ -3,7 +3,7 @@ package week2.abstraction;
 public class Teacher extends Person{
 
     public Teacher(String name, String address) {
-        super(name,address);
+        super(name, address);
     }
 
     @Override
