@@ -1,3 +1,4 @@
+//implementation class for person
 public class Teacher extends Person {
 
     private String name, address;

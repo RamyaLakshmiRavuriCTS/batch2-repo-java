@@ -1,3 +1,4 @@
+//abstract class
 public abstract class Person {
     String name;
     String address;

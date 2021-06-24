@@ -1,5 +1,5 @@
 import java.util.*;
-
+//main class
 public class DuplicateAndSort {
 
     static List<Number> numbers = new ArrayList<>();

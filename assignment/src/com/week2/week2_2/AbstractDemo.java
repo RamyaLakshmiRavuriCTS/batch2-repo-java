@@ -1,5 +1,6 @@
+//main class
 public class AbstractDemo {
-
+    //main method
     public static void main(String[] args) {
 
         Student student = new Student("Krishna", "Hyderabad");

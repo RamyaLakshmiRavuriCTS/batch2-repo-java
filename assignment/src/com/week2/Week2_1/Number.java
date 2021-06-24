@@ -1,3 +1,4 @@
+// Number class
 public class Number implements Comparable {
 
     double number;

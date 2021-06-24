@@ -1,6 +1,6 @@
 import java.util.HashMap;
 import java.util.Scanner;
-
+//main class
 public class SumPairs {
 
     public static void main(String[] args) {
