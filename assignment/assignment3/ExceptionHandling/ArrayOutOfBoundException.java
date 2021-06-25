@@ -10,9 +10,11 @@ public class ArrayOutOfBoundException {
         int size = Integer.parseInt(scanner.nextLine());
         int[] array = new int[size];
         System.out.println("Enter array elements");
+       
         for (int i = 0; i < size; i++) {
             array[i] = scanner.nextInt();
         }
+       
         try {
             System.out.println("enter array index of first element");
             int index1 = scanner.nextInt();
