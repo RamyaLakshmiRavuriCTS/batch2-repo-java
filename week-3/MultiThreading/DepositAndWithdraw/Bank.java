@@ -6,6 +6,7 @@ public class Bank implements Runnable {
         Bank bank = new Bank();
         Thread t1 = new Thread(bank);
         Thread t2 = new Thread(bank);
+
         t1.setName("Thread 1");
         t2.setName("Thread 2");
         t1.start();

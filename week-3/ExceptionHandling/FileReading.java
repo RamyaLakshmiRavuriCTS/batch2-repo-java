@@ -4,6 +4,7 @@ public class FileReading {
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
+
         try {
             FileInputStream fr = new FileInputStream("E:\\Input.txt");
             FileOutputStream fw = new FileOutputStream("E:\\Output.txt");
@@ -14,6 +15,7 @@ public class FileReading {
             }
             System.out.println(str);
             char ch[]=str.toCharArray();
+
             for(int j=0;j<str.length();j++) {
                 fw.write((ch[j]));
             }
