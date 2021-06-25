@@ -22,6 +22,7 @@ public class NullException {
         int num2 = obj.getInt();
         System.out.println("enter string");
         String s = obj.getString();
+        
         try {
             int result = num1 / num2;
             if (obj.string.equals(s)) {
