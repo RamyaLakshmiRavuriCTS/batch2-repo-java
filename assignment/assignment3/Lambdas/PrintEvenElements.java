@@ -28,6 +28,7 @@ public class PrintEvenElements {
             array[i] = read.nextInt();
             numberList.add(array[i]);
         }
+        
         EvenNumber e = (i) -> {
             if (i % 2 == 0) System.out.println(i);
         };
