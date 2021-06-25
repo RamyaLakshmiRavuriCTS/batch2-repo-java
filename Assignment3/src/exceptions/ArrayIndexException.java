@@ -9,7 +9,6 @@ public class ArrayIndexException {
         int index = 6;
 
         try{
-//            System.out.println("Index at " + index + " in integers array is : " + integers[index]);
             System.out.print("Index is " + index +" =");
             System.out.println(integers[index]);
         }
