@@ -5,10 +5,10 @@ package MultiThreading;
 public class Runnable1 implements Runnable {
     @Override
     public void run() {
-        Lock();
+        lock();
     }
 
-    void Lock() {
+    void lock() {
         System.out.println(Thread.currentThread().getName());
         synchronized (Runnable1.class) {
             System.out.println("In block " + Thread.currentThread().getName());
