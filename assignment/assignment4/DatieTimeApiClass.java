@@ -13,10 +13,9 @@ public class DatieTimeApiClass {
         System.out.println("Current Zone: " + currentTime.getZone());
 
         ZoneId zone = ZoneId.of("Asia/Tokyo");
-
+        
         LocalTime time = LocalTime.now(zone);
         System.out.println("Tokyo Time: " + time);
-
 
     }
 
