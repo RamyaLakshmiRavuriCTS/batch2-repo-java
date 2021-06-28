@@ -15,8 +15,7 @@ public class Function {
         int a = sc.nextInt();
         System.out.println("Enter b value:");
         int b = sc.nextInt();
-
-
+        
         Arthimetic sum = (x, y) -> a + b;
         Arthimetic s = (x, y) -> a - b;
         Arthimetic m = (x, y) -> a * b;
