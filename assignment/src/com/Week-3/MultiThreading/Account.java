@@ -1,4 +1,4 @@
-package MultiThreading;
+package Multithreading;
 
 /*Account is a class having withdraw and deposit methods*/
 public class Account {

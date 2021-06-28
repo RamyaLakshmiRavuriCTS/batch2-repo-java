@@ -1,4 +1,4 @@
-package ExceptionHandling;
+package Exceptionhandling;
 
 import java.util.Scanner;
 
@@ -9,14 +9,14 @@ public class Exception2 {
     private int number1;
     private int number2;
     private String string;
-    Scanner sc = new Scanner(System.in);
+    Scanner scanner = new Scanner(System.in);
 
     private int getInt() {
-        return sc.nextInt();
+        return scanner.nextInt();
     }
 
     private String getString() {
-        return sc.next();
+        return scanner.next();
     }
 
     /*Main method
@@ -25,13 +25,13 @@ public class Exception2 {
      * When a value is not assigned to string,it throws NullPointerException when string is empty
      * and it is handled by catch block*/
     public static void main(String[] args) {
-        Exception2 obj = new Exception2();
+        Exception2 object = new Exception2();
         System.out.println("number1=");
-        int number1 = obj.getInt();
+        int number1 = object.getInt();
         System.out.println("number2=");
-        int number2 = obj.getInt();
+        int number2 = object.getInt();
         System.out.println("Enter String");
-        String s = obj.getString();
+        String s = object.getString();
         try {
             int result = number1 / number2;
             System.out.println("Result of division is " + result);

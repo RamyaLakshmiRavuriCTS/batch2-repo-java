@@ -1,4 +1,4 @@
-package MultiThreading;
+package Multithreading;
 
 /*This class implements Runnable interface*/
 public class ThreadSynchronization implements Runnable {

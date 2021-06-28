@@ -1,4 +1,4 @@
-package MultiThreading;
+package Multithreading;
 
 /*This class implements Runnable interface works on multi threading concepts*/
 public class Run implements Runnable {

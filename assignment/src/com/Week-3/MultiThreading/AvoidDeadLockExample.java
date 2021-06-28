@@ -1,4 +1,4 @@
-package MultiThreading;
+package Multithreading;
 
 /*This class avoids dead lock situation in multi threading
  * DeadLock means when two Threads are run concurrently

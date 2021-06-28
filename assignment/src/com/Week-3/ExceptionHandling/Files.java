@@ -1,4 +1,4 @@
-package ExceptionHandling;
+package Exceptionhandling;
 
 import java.io.*;
 import java.util.*;

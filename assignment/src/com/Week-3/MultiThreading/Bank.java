@@ -1,4 +1,4 @@
-package MultiThreading;
+package Multithreading;
 
 /*Bank implements runnable interface and
  *works on multithreading*/
