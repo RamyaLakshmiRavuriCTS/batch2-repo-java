@@ -15,6 +15,7 @@ public class DefaultAndStatic implements StringOperations{
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter input");
         String input = sc.nextLine();
+        
         DefaultAndStatic defaultAndStaticMethodsExample = new DefaultAndStatic();
         System.out.println(defaultAndStaticMethodsExample.concat(input));
         System.out.println(StringOperations.length(input));
