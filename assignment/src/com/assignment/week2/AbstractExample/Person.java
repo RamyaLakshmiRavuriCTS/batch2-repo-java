@@ -1,5 +1,5 @@
 public abstract class Person {
-    public abstract void Role();
+    public abstract void role();
 
     public  abstract void Responsibilty();
 

@@ -1,13 +1,13 @@
 public class Abstract {
     public static void main(String[] args) {
         Person student = new Student("Triveni","sss colony");
-        student.Role();
+        student.role();
         student.Responsibilty();
         Person teacher = new Teacher("xyz","skvgt school");
-        teacher.Role();
+        teacher.role();
         teacher.Responsibilty();
         Person doctor = new Doctor("abc","rainbow hospy");
-        doctor.Role();
+        doctor.role();
         doctor.Responsibilty();
 
     }

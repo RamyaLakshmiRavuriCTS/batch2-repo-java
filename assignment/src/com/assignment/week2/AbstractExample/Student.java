@@ -4,7 +4,7 @@ public class Student extends Person{
     }
 
     @Override
-    public void Role() {
+    public void role() {
         System.out.println(getName() + " is a student.");
         System.out.println(getName() + " address is " + getAddress());
     }
