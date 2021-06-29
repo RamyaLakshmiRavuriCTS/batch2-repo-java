@@ -1,3 +1,4 @@
+package Week3.Exceptions;
 
 import java.io.*;
 import java.util.Scanner;
@@ -7,8 +8,8 @@ public class CopyingFiles {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String inputFile = sc.nextLine();
-        String outputFile = sc.nextLine();
+        String inputFile = "C:\\Assignments\\batch2-repo-java\\Week3\\Exceptions\\source.txt";
+        String outputFile = "C:\\Assignments\\batch2-repo-java\\Week3\\Exceptions\\Target.txt";
         File input = new File(inputFile);
         File output = new File(outputFile);
 

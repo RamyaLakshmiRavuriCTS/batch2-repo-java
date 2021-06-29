@@ -22,5 +22,6 @@ public class ArrayIndexOutOfBoundsException {
         } catch (java.lang.ArrayIndexOutOfBoundsException e) {
             System.out.println("end of main");
         }
+        System.out.println("Exit");
     }
 }
