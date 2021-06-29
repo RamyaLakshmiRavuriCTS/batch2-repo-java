@@ -8,8 +8,8 @@ public class CopyingFiles {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String inputFile = sc.nextLine();
-        String outputFile = sc.nextLine();
+        String inputFile = "C:\\Users\\890773\\IdeaProjects\\Week03\\src\\Exceptions\\source";
+        String outputFile = "C:\\Users\\890773\\IdeaProjects\\Week03\\src\\Exceptions\\Target";
         File input = new File(inputFile);
         File output = new File(outputFile);
 
