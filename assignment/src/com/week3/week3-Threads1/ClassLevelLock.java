@@ -4,10 +4,10 @@ class ClassLevelLock implements Runnable {
     //run method
     public void run() {
 
-        Lock();
+        lock();
     }
     //lock method
-    public void Lock() {
+    public void lock() {
 
         //System.out.println(Thread.currentThread().getName());
         synchronized (ClassLevelLock.class) {
