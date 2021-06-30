@@ -1,31 +1,49 @@
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Predicate;
+import java.util.Scanner;
 
+//functional interface
+@FunctionalInterface
+interface EvenNumber {
+    public void checkEven(int key);
+}
+
+//functional interface
+@FunctionalInterface
+interface Square {
+    public int square(int key);
+
+}
+
+//main class
 public class LambdaStrings {
+    //main method
+    public static void main(String[] args) {
 
-    public static void main(String [] a) {
+        Scanner read = new Scanner(System.in);
+        System.out.println("Enter size of array");
+        int size = read.nextInt();
+        int[] array = new int[size];
+        List<Integer> numberList = new ArrayList<>();
 
-        List<Integer> list = Arrays.asList(2,45,67,33,24,88,94,356,77,12);
-        int num = 5;
-        double square = num*num;
+        for (int i = 0; i < size; i++) {
+            array[i] = read.nextInt();
+            numberList.add(array[i]);
+        }
+        EvenNumber e = (i) -> {
+            if (i % 2 == 0) System.out.println(i);
+        };
 
-        System.out.println("Print even numbers:");
-        evaluate(list, (n)-> n%2 == 0 );
-
-        System.out.println("Square of "+ num + " is: "+ square);
-    }
-
-    public static void evaluate(List<Integer> list, Predicate<Integer> predicate) {
-        for(Integer n: list) {
-            if(predicate.test(n)) {
-                System.out.println(n + "  " );
-            }
-
+        System.out.println("Even numbers:");
+        for (Integer value : numberList) {
+            e.checkEven(value);
         }
 
-
+        System.out.println("enter the key");
+        int squareNumber = read.nextInt();
+        Square sq = ((i) -> i * i);
+        System.out.println();
+        System.out.print("Square of a number: ");
+        System.out.print(sq.square(squareNumber));
     }
-
-
 }
