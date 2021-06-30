@@ -8,7 +8,6 @@ import java.util.stream.Stream;
 public class UpperString {
 
     public static void main(String[] args) {
-
         List<String> words = Arrays.asList("Bhaskar", "Manidhar", "Ramya", "sarat");
         Stream<String> wordsStream = words.stream();
 

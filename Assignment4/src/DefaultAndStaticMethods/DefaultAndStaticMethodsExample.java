@@ -17,7 +17,6 @@ public class DefaultAndStaticMethodsExample implements StringOperations {
      * but static method length cannot be override
      * those static are also called factory methods*/
     public static void main(String[] args) {
-
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter input");
         String input = sc.nextLine();
