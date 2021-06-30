@@ -10,7 +10,6 @@ public class MethodReference {
         employeeList.add(new Employee("Suma", 890828, 21));
         employeeList.add(new Employee("Sravani", 890827, 22));
         employeeList.add(new Employee("Ramya", 890826, 23));
-
     }
 
     private List<Employee> sortByName() {
