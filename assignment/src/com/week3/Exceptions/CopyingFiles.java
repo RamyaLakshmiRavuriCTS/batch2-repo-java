@@ -10,11 +10,12 @@ import java.util.Scanner;
 public class CopyingFiles {
     private static final int BUFFER_SIZE = 4096;
 
-     /*Main method
+    /*Main method
      * it takes file locations in dynamic way
      * and copy the content in source file into destination file
      * if any one of the files is not present then it shows an Exception
      * that has handled by catch block */
+
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
