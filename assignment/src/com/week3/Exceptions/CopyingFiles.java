@@ -3,8 +3,18 @@ package Exceptions;
 import java.io.*;
 import java.util.Scanner;
 
+/*This class copy the content in one file to another file
+ * if file location is not found, it throws an Exception
+ * that Exception is FileNotFoundException*/
+
 public class CopyingFiles {
     private static final int BUFFER_SIZE = 4096;
+
+     /*Main method
+     * it takes file locations in dynamic way
+     * and copy the content in source file into destination file
+     * if any one of the files is not present then it shows an Exception
+     * that has handled by catch block */
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
