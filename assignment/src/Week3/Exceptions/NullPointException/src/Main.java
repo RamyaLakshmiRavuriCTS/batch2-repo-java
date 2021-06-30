@@ -1,6 +1,6 @@
 import java.util.Scanner;
 //main class
-public class MultipleException {
+public class Exception {
     //main method
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
