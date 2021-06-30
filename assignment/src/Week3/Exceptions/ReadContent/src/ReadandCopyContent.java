@@ -1,27 +1,30 @@
 import java.io.*;
 import java.util.Scanner;
-public class ReadandCopyContent{
-    public static void main(String[] args)
-    {
+
+public class ReadContent {
+    private static final int BUFFER_SIZE = 4096;
+
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        try {
-            FileInputStream fr = new FileInputStream("C:\\Users\\GANGADHAR YALASA\\Readcontent\\input.txt");
-            FileOutputStream fw = new FileOutputStream("C:\\Users\\GANGADHAR YALASA\\Readcontent\\output.txt");
-            String str = " ";
-            int i;
-            while ((i = fr.read()) != -1) {
-                str += (char)i;
+        String inputFile = "C:\\Users\\890510\\ReadContent\\input\\input.txt";
+        String outputFile = "C:\\Users\\890510\\ReadContent\\output\\output.txt";
+        File input = new File(inputFile);
+        File output = new File(outputFile);
+
+        try (
+                InputStream inputStream = new FileInputStream(inputFile);
+                OutputStream outputStream = new FileOutputStream(outputFile);
+        ) {
+
+            byte[] buffer = new byte[BUFFER_SIZE];
+            int bytesRead = -1;
+
+            while ((bytesRead = inputStream.read(buffer)) != -1) {
+                outputStream.write(buffer, 0, bytesRead);
             }
-            System.out.println(str);
-            char ch[]=str.toCharArray();
-            for(int j=0;j<str.length();j++) {
-                fw.write((ch[j]));
-            }
-            fr.close();
-            fw.close();
-        }
-        catch (IOException e) {
-            System.out.println("There are some IOException");
+            System.out.println("Successfully Copied the files");
+        } catch (IOException ex) {
+            ex.printStackTrace();
         }
     }
 }
