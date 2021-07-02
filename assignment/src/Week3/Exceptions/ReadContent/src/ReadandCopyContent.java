@@ -22,7 +22,7 @@ public class ReadContent {
             while ((bytesRead = inputStream.read(buffer)) != -1) {
                 outputStream.write(buffer, 0, bytesRead);
             }
-            System.out.println("Successfully Copied the files");
+            System.out.println("Completed to copy the files");
         } catch (IOException ex) {
             ex.printStackTrace();
         }
