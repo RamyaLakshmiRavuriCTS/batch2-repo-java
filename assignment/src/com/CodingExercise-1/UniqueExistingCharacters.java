@@ -5,23 +5,27 @@ public class UniqueExistingCharacters {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter first string:");
         String string1 = sc.nextLine();
+
         System.out.println("Enter second string:");
         String string2 = sc.nextLine();
+
         System.out.println(display(string1, string2));
     }
 
     public static String display(String string1, String string2) {
-        String s2 = string1.toLowerCase();
-        String s3 = string2.toLowerCase();
-        StringBuffer sb = new StringBuffer();
+        String input2 = string1.toLowerCase();
+        String input3 = string2.toLowerCase();
+
+        StringBuffer output = new StringBuffer();
+
         for (int i = 0; i < string1.length(); i++) {
-            char c = s2.charAt(i);
-            if (s3.indexOf(c) == -1)
-                sb.append("+");
+            char character = input2.charAt(i);
+            if (input3.indexOf(character) == -1)
+                output.append("+");
             else
-                sb.append(string1.charAt(i));
+                output.append(string1.charAt(i));
         }
-        return sb.toString();
+        return output.toString();
 
     }
 }
