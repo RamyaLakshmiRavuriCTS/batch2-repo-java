@@ -8,9 +8,9 @@ public class UserMainCode {
         int sum = 0;
         //removing duplicates
         Set<Integer> uniqueNumbers = new HashSet<>(Arrays.asList(arr));
-        for (Integer i : uniqueNumbers) {
-            if (i % 2 == 0) {
-                sum = sum + i;
+        for (Integer number : uniqueNumbers) {
+            if (number % 2 == 0) {
+                sum = sum + number;
             }
         }
         if (sum == 0) {
