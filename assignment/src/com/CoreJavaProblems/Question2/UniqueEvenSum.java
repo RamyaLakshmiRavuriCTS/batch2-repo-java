@@ -1,3 +1,4 @@
+import java.util.HashSet;
 import java.util.Scanner;
 
 public class UniqueEvenSum {
@@ -19,10 +20,15 @@ public class UniqueEvenSum {
     }
 
     public static int addUniqueEven(int[] array) {
+        HashSet<Integer> set=new HashSet<Integer>();
         int sum = 0;
         for (int i = 0; i < array.length; i++) {
-            if (array[i] % 2 == 0)
-                sum += array[i];
+            if(set.contains(array[i]));
+            else {
+                if (array[i] % 2 == 0)
+                    sum += array[i];
+                set.add(array[i]);
+            }
         }
         if (sum != 0)
             return sum;
