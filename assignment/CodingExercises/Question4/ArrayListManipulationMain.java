@@ -8,11 +8,11 @@ public class ArrayListManipulationMain {
 	public static void main(String[] args) {
 		
 		UserMainCode u = new UserMainCode();
-		Scanner sc=new Scanner(System.in);		
+		Scanner sc = new Scanner(System.in);		
 		System.out.println("Enter the no.of elements");
 		int N=sc.nextInt();
-		List<Integer> l1= new ArrayList<Integer>();
-		List<Integer> l2= new ArrayList<Integer>();
+		List<Integer> l1 = new ArrayList<Integer>();
+		List<Integer> l2 = new ArrayList<Integer>();
 		
 		for (int i=0;i<N;i++) {
 			l1.add(sc.nextInt());
