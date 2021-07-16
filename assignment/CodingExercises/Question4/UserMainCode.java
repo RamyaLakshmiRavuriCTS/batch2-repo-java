@@ -5,7 +5,7 @@ import java.util.List;
 
 public class UserMainCode {
 	
-	public static List<Integer> generateOddEvenList(List<Integer> l1,List<Integer>l2){
+	public static List<Integer> generateOddEvenList(List<Integer> l1,List<Integer> l2){
 		
 		List<Integer> finalList = new ArrayList<Integer>();
 				
