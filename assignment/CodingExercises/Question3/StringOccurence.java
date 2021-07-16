@@ -5,7 +5,7 @@ public class StringOccurence {
 	
 	public static void main(String[] args) {		
 		
-		UserMainCode u=new UserMainCode();
+		UserMainCode u = new UserMainCode();
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter first sentence");
 		String sentence1 = scanner.nextLine();
