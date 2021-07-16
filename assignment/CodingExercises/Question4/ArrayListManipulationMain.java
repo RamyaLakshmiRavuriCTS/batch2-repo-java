@@ -7,7 +7,7 @@ public class ArrayListManipulationMain {
 
 	public static void main(String[] args) {
 		
-		UserMainCode u=new UserMainCode();
+		UserMainCode u = new UserMainCode();
 		Scanner sc=new Scanner(System.in);		
 		System.out.println("Enter the no.of elements");
 		int N=sc.nextInt();
