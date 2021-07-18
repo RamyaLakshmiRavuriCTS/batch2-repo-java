@@ -9,7 +9,7 @@ public class UserMainCodeTest {
 
     @Test
     public void countNoOfWordsTest() {
-        assertEquals(countNoOfWords("abc bcd abc bcd abc abc", "av abc"),4);
-        assertEquals(countNoOfWords("ABC xyz AAA", "w abc"),0);
+        assertEquals(countNoOfWords("abc bcd abc bcd abc abc", "av abc"), 4);
+        assertEquals(countNoOfWords("ABC xyz AAA", "w abc"), 0);
     }
 }
