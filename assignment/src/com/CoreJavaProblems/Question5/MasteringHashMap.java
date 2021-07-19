@@ -18,13 +18,15 @@ public class MasteringHashMap {
     }
 
     public static int getAverageOfOdd(HashMap<Integer, Integer> arg1) {
-        int sum = 0;
+        int sum = 0,count=0;
         for (Map.Entry<Integer, Integer> set :
                 arg1.entrySet()) {
 
-            if (set.getKey() % 2 != 0)
+            if (set.getKey() % 2 != 0) {
                 sum += set.getValue();
+                count++;
+            }
         }
-        return sum;
+        return (int)(sum/count);
     }
 }
