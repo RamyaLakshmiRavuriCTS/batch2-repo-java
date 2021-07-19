@@ -1,5 +1,6 @@
 import java.util.*;
 
+//Main class
 public class Kaprekar {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -14,6 +15,7 @@ public class Kaprekar {
         }
     }
 
+    //Logic implementation class
     static class Getkaprekar {
         public static int getKaprekarnumber(int number) {
             int left = 0;
