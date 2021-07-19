@@ -15,14 +15,12 @@ public class Getanagram {
 
             // if sorted char arrays are same
             // then the string is anagram
-            boolean output = Arrays.equals(charArray1, charArray2);
-
-            if (output) {
+            boolean result = Arrays.equals(charArray1, charArray2);
+            if (result) {
                 return 1;
             } else {
                 return -1;
             }
-
         }
         return 0;
     }
