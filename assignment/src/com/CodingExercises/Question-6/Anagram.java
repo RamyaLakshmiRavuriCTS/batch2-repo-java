@@ -7,12 +7,12 @@ public class Anagram {
         Scanner scanner = new Scanner(System.in);
         String string1 = scanner.nextLine();
         string1 = string1.toLowerCase();
-        
+
         String string2 = scanner.nextLine();
         string2 = string2.toLowerCase();
 
-        int output = Getanagram.getanagram(string1, string2);
-        if (output == 1) {
+        int result = Getanagram.getanagram(string1, string2);
+        if (result == 1) {
             System.out.println("Anagrams.");
         } else {
             System.out.println("Not Anagrams.");
