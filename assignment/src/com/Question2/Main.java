@@ -9,10 +9,12 @@ public class Main {
         int size = sc.nextInt();
         Integer[] arr = new Integer[size];
         System.out.println("Enter the Array of Integers");
+
         for(int i=0;i<size;i++) {
             arr[i] = sc.nextInt();
         }
         int sum = UserMainCode.addUniqueEven(arr);
+
         if(sum!=-1){
             System.out.println(sum);
         }
