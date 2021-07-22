@@ -12,7 +12,7 @@ public class UserMainCodeTest {
 
     @Test
     public void getAverageOfOddTest() {
-        Map<Integer,Integer> number = Map.of(2,34,1,4,5,12,4,22);
+        Map<Integer,Integer> number = Map.of(2, 34, 1, 4, 5, 12, 4, 22);
         assertEquals(8, getAverageOfOdd(number));
     }
 }

@@ -8,6 +8,7 @@ public class UserMainCode {
         int count = 0;
         int sum = 0;
         int average = 0;
+
         for (Integer i: numbers.keySet()) {
             if (i % 2 != 0) {
                 count++;

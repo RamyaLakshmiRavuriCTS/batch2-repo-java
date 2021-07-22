@@ -12,7 +12,7 @@ public class UserMainCodeTest {
         int[] array1 = {2,5,1,4};
         int[] array2 = {1,1,1};
 
-        assertEquals(addUniqueEven(array1),6);
-        assertEquals(addUniqueEven(array2),-1);
+        assertEquals(addUniqueEven(array1), 6);
+        assertEquals(addUniqueEven(array2), -1);
     }
 }
