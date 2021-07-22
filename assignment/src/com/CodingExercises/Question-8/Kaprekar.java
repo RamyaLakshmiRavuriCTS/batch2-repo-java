@@ -1,6 +1,6 @@
 import java.util.*;
 
-//Main class
+//main method
 public class Kaprekar {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -15,30 +15,22 @@ public class Kaprekar {
         }
     }
 
-    //Logic implementation class
+    //Logic implementation
     static class Getkaprekar {
         public static int getKaprekarnumber(int number) {
-            int left = 0;
-            int digit = 0, square, right = 0;
-            square = number * number;
-            left = square;
-
-            while (square > 0) {
+            int value = (int) Math.pow(number, 2);
+            int temp = number, digit = 0;
+            while (temp != 0) {
+                temp = temp / 10;
                 digit++;
-                square = square / 10;
             }
-
-            int number1 = (int) Math.pow(10, (digit / 2));
-            while (left > 0) {
-                right = right + (left % number1);
-                left = left / number1;
-            }
-
-            if (number==right) {
+            int right = (int) (value / Math.pow(10, digit));
+            int left = (int) (value % Math.pow(10, digit));
+            int result = (int) (right + left);
+            if (result == number) {
                 return 1;
-            } else {
-                return -1;
             }
+            return -1;
         }
     }
 }
