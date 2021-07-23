@@ -9,7 +9,7 @@ public class UserMainCodeTest {
 
     @Test
     public void replacePlusTest() {
-        assertEquals(replacePlus("abcxyz","axdef"),"a++x++");
-        assertEquals(replacePlus("ABCDEF","feCBAd"),"ABCDEF");
+        assertEquals(replacePlus("abcxyz", "axdef"), "a++x++");
+        assertEquals(replacePlus("ABCDEF", "feCBAd"), "ABCDEF");
     }
 }
