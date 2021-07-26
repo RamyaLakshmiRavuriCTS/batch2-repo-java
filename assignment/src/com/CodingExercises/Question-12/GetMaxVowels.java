@@ -7,6 +7,9 @@ public class GetMaxVowels {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the string:");
         String string = scanner.nextLine();
+        if (string.length() > 100) {
+            string = string.substring(0, 100);
+        }
         System.out.println(getMaximumvowels(string));
     }
 
