@@ -39,7 +39,7 @@ public class ArrayListAndSetOperations {
                 if (result.contains(list2.get(i)))
                     result.remove(list2.get(i));
             }
-        } else {
+        } else if(setOperator == '-'){
             result = new ArrayList<>();
             HashSet<Integer> set = new HashSet<>(list1);
             for (int i = 0; i < list2.size(); i++) {
@@ -47,6 +47,10 @@ public class ArrayListAndSetOperations {
                     result.add(list2.get(i));
             }
         }
+	else{
+		System.out.println("Please use mentioned operators");
+		System.exit(0);
+	}
         return result;
     }
 }
