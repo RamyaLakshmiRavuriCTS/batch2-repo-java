@@ -19,7 +19,7 @@ public class Main {
                 list2.add(sc.nextInt());
             }
         }
-        List<Integer> result = UserMainCode.generateOddEvenList(list1,list2);
+        List<Integer> result = UserMainCode.generateOddEvenList(list1, list2);
 
         System.out.println(result);
     }
