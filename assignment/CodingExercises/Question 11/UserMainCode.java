@@ -19,7 +19,7 @@ public class UserMainCode {
 	                total = mark1 + mark2 + mark3;
 	            }
 	            else{
-	                maxScorer="marks cannot extends 100";
+	                maxScorer = "marks cannot extends 100";
 	                break;
 	            }
 	            
