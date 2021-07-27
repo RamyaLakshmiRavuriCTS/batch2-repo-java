@@ -10,7 +10,7 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		List<String> Students = new ArrayList<>();
 		System.out.println("Enter the size");
-		int N =sc.nextInt();
+		int N = sc.nextInt();
 
 		for (int i = 0; i < N; i++) {
 			Students.add(sc.next());
