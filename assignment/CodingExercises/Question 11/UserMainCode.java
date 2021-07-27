@@ -15,7 +15,7 @@ public class UserMainCode {
 	            mark2 = Integer.parseInt(studentArray[2]);
 	            mark3 = Integer.parseInt(studentArray[3]);
 	            
-	            if(mark1<=100&& mark2<=100&&mark3<=100) {
+	            if(mark1 <= 100 && mark2 <= 100 && mark3 <= 100) {
 	                total = mark1 + mark2 + mark3;
 	            }
 	            else{
