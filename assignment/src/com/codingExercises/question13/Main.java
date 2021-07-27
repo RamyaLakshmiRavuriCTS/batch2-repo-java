@@ -12,6 +12,6 @@ public class Main {
         if (sentence.length() > 100) {
             sentence = sentence.substring(0, 100);
 	}
-        System.out.println(UserMainCode.swapPairs(scanner.nextLine()));
+        System.out.println(UserMainCode.swapPairs(sentence));
     }
 }
