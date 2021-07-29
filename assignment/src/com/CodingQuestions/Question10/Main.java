@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
 
@@ -17,10 +15,14 @@ public class Main {
                 list1.add(scanner.nextInt());
             }
         }
+        Set<Integer> list2 = new LinkedHashSet<>();
+        list2.addAll(list);
+        list.clear();
+        list.addAll(list2);
         String operation = scanner.next();
         List<Integer> output = UserMainCode.performSetOperations(list, list1, operation);
-        for (Integer number : output) {
-            System.out.println(number);
+        for (Integer numbers : output) {
+            System.out.println(numbers);
         }
     }
 }
