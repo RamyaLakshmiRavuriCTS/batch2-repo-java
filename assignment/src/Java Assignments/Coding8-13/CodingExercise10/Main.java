@@ -1,34 +1,37 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
+
 //main class
 public class Main {
 
-    //main method
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter the String:");
-        int size = scanner.nextInt();
+        int input = scanner.nextInt();
+        List<Integer> list = new ArrayList<>();
         List<Integer> list1 = new ArrayList<>();
-        List<Integer> list2 = new ArrayList<>();
-        for (int i = 0; i < 2 * size; i++) {
-            if (i < size) {
-                list1.add(scanner.nextInt());
+        for (int i = 0; i < 2 * input; i++) {
+            if (i < input) {
+                list.add(scanner.nextInt());
             } else {
-                list2.add(scanner.nextInt());
+                list1.add(scanner.nextInt());
             }
         }
+        Set<Integer> list2 = new LinkedHashSet<>();
+        list2.addAll(list);
+        list.clear();
+        list.addAll(list2);
         String operation = scanner.next();
-        List<Integer> result = performSetOperations(list1, list2, operation);
-        for (Integer number : result) {
-            System.out.println(number);
+        List<Integer> output = performSetOperations(list, list1, operation);
+        for (Integer numbers : output) {
+            System.out.println(numbers);
         }
-    }
+        }
     public static List<Integer> performSetOperations(List<Integer> list1, List<Integer> list2, String operationType) {
         List<Integer> modifiedList = new ArrayList<>();
         switch (operationType) {
+            default:
+
+                System.out.println("Wrong operation Symbol");
+
             case "+":
                 Set<Integer> elimanteCommon = new HashSet<>();
                 elimanteCommon.addAll(list1);
