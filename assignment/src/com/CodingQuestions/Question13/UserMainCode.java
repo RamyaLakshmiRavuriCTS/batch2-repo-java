@@ -11,5 +11,3 @@ public class UserMainCode {
         return String.valueOf(inputArray);
     }
 }
-
-
