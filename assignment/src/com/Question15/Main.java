@@ -6,16 +6,19 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         int size=scanner.nextInt();
-        Map<Integer,String> dobMap=new HashMap<>();
-        Map<Integer,Integer> salaryMap=new HashMap<>();
+        Map<Integer,String> dobMap = new HashMap<>();
+        Map<Integer,Integer> salaryMap = new HashMap<>();
+
         for(int i=0;i<size;i++){
-            int id=scanner.nextInt();
+            int id = scanner.nextInt();
             dobMap.put(id,scanner.next());
             salaryMap.put(id,scanner.nextInt());
         }
-        Map<Integer,Integer> result=UserMainCode.calculateRevisedSalary(dobMap,salaryMap);
+
+        Map<Integer,Integer> result = UserMainCode.calculateRevisedSalary(dobMap,salaryMap);
+
         for(Map.Entry<Integer,Integer> map:result.entrySet()){
             System.out.println(map.getKey());
             System.out.println(map.getValue());

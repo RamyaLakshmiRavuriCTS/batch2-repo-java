@@ -9,6 +9,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int size = scanner.nextInt();
         List<String> students = new ArrayList<>();
+
         for (int i = 0; i < size; i++) {
             students.add(scanner.next());
         }

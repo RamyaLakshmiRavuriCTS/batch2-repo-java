@@ -11,6 +11,7 @@ public class UserMainCode {
         DateTimeFormatter dateTimeFormatter2 = DateTimeFormatter.ofPattern("MM/d/yyyy");
         LocalDate localDate1 = LocalDate.parse(date1, dateTimeFormatter);
         LocalDate localDate2 = LocalDate.parse(date2, dateTimeFormatter);
+
         if (localDate1.isBefore(localDate2)) {
             return localDate1.format(dateTimeFormatter2);
         }

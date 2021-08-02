@@ -12,6 +12,7 @@ public class UserMainCode {
             mark1 = Integer.parseInt(studentArray[1]);
             mark2 = Integer.parseInt(studentArray[2]);
             mark3 = Integer.parseInt(studentArray[3]);
+
             if(mark1<=100&& mark2<=100&&mark3<=100) {
                 total = mark1 + mark2 + mark3;
             }
@@ -19,6 +20,7 @@ public class UserMainCode {
                 highestScorer = "marks cannot extends 100";
                 break;
             }
+
             if (total > max) {
                 max = total;
                 highestScorer = studentArray[0];
