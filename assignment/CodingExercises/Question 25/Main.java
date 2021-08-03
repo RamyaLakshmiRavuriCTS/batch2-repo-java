@@ -8,5 +8,4 @@ public class Main {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println(UserMainCode.getAge("01-01-2015", scanner.next()));
 	}
-
 }

@@ -16,5 +16,4 @@ public class UserMainCode {
 		}
 		return "not-eligible";
 	}
-
 }

@@ -3,10 +3,9 @@ package com.cts.question23;
 import java.util.Scanner;
 
 public class Main {
-
 	public static void main(String[] args) {
 		Scanner scanner=new Scanner(System.in);
-        System.out.println(UserMainCode.convertDateFormat(scanner.next()));
+       	 	System.out.println(UserMainCode.convertDateFormat(scanner.next()));
 
 	}
 
