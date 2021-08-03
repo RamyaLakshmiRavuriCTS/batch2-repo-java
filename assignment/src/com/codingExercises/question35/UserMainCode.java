@@ -13,13 +13,14 @@ public class UserMainCode {
     }
 
     public static void display(){
+        Map<String, List<Integer>> sortedMap = new TreeMap<>(cardMap);
         System.out.println("Distinct Symbols are :");
-        for(String string:cardMap.keySet()){
-            System.out.println(string+" ");
+        for(String string:sortedMap.keySet()){
+            System.out.print(string+" ");
         }
-
-        for(String string:cardMap.keySet()) {
-            for (Map.Entry<String, List<Integer>> map : cardMap.entrySet()) {
+        System.out.println();
+        for(String string:sortedMap.keySet()) {
+            for (Map.Entry<String, List<Integer>> map : sortedMap.entrySet()) {
                 if(map.getKey().equals(string)){
                     System.out.println("Cards in "+map.getKey()+" Symbol");
                     int sum=0;
