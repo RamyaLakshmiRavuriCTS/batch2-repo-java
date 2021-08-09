@@ -48,6 +48,7 @@ public class Card {
         System.out.println("Distinct Symbols are :");
         String distinctSymbols = cardsMap.keySet().stream().sorted().collect(Collectors.joining(" "));
         System.out.println(distinctSymbols);
+
         for (String k : cardsMap.keySet().stream().sorted().collect(Collectors.toList())) {
             System.out.println("Cards in " + k + " Symbol");
             List<Card> list = cardsMap.get(k);

@@ -16,6 +16,7 @@ public class Main {
             printMenu();
             System.out.println("Enter your choice :");
             input = Integer.parseInt(scanner.nextLine());
+
             switch (input) {
                 case 1: {
                     //insert
@@ -29,6 +30,7 @@ public class Main {
                     //search
                     System.out.println("Enter the item to search :");
                     String word = scanner.nextLine();
+
                     if (stringList.contains(word)) {
                         System.out.println("Item found in the list.");
                     } else {
@@ -40,6 +42,7 @@ public class Main {
                     //delete
                     System.out.println("Enter the item to delete :");
                     String word = scanner.nextLine();
+
                     if (stringList.contains(word)) {
                         stringList.remove(word);
                         System.out.println("Deleted successfully");
